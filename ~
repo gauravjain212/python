@@ -1,0 +1,23 @@
+import re
+email_list = "gaurav <gaurav@example.com>, videha <videha@example.com>, akshara <akshara@example.com>, akshita <akshita@example.com> bobby <bobby@example.com>"
+
+a = re.search("videha", email_list)
+print(a)
+
+b = re.search("satish", email_list)
+print(b)
+
+c = re.search("bobb[y,i]", email_list)	#Always Provide First Search
+print(c)
+
+d = re.search("[g,G]aurav", email_list)
+print(d)
+
+e = re.search("[a,A]+", email_list)
+print(e)
+
+f = re.search(r"\w+", email_list)
+print(f)
+
+g = re.search(r"[G][a-z][a-z")
+print(g)
