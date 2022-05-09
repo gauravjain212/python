@@ -1,0 +1,12 @@
+import csv
+
+filename = input("Enter CSV File name to read: ")
+
+filecontent = open(filename,"r")
+
+csvfile = csv.reader(filecontent)
+
+for line in csvfile:
+    print(line)
+
+filecontent.close()
