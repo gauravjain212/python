@@ -1,0 +1,19 @@
+SC-1:~ # tail -f /cluster/storage/no-backup/coremw/var/log/syslog/sapc/sapc.log
+^C
+SC-1:~ # ssh SC-2
+Last login: Fri Jan  7 03:57:51 2022 from sc-1
+********************************************************************************
+This system belongs to Airtel. All content on this system is confidential in
+order to comply with Airtel internal policies. Any unauthorized use of the
+system or the information therein shall be subjected to disciplinary action and
+may lead to criminal prosecution. By continuing to use this system you indicate
+your awareness of and consent to these terms and conditions of use.
+********************************************************************************
+SC-2:~ # tail -f /cluster/storage/no-backup/coremw/var/log/syslog/sapc/sapc.log
+2022-01-07T05:05:23.244+05:30 ER SAPC_PL-4: "Unsuccessful STA received. Protocol: ESy, Result-Code: 5002, SessionId: mumspesapc01.inpcrf.mnc092.mcc404.3gppnetwork.org;1641473538;165275282;919867995171"
+2022-01-07T05:05:24.251+05:30 ER SAPC_PL-4: "Unsuccessful STA received. Protocol: ESy, Result-Code: 5003, SessionId: mumspesapc01.inpcrf.mnc092.mcc404.3gppnetwork.org;1641473538;165349647;919892227232"
+2022-01-07T05:05:24.251+05:30 ER SAPC_PL-4: "Unsuccessful STA received. Protocol: ESy, Result-Code: 5004, SessionId: mumspesapc01.inpcrf.mnc092.mcc404.3gppnetwork.org;1641473538;165349647;919892227232"
+2022-01-07T05:05:24.251+05:30 ER SAPC_PL-4: "Unsuccessful STA received. Protocol: ESy, Result-Code: 5005, SessionId: mumspesapc01.inpcrf.mnc092.mcc404.3gppnetwork.org;1641473538;165349647;919892227232"
+
+SC-2:/cluster/storage/no-backup/coremw/var/log/syslog/sapc # timed out waiting for input: auto-logout
+Connection to sc-2 closed.

@@ -12,4 +12,4 @@ files_list = os.listdir(files_path)
 for file_name in files_list:
     if os.path.isfile(file_name):
         s3.upload_file(file_name,bucket_name,file_name)
-        print(f"{file_name} --> {bucket_name}")     
+        print(f"{file_name} ---> {bucket_name}")
