@@ -1,0 +1,11 @@
+#!/usr/bin/env python3.9
+
+#print("Hello World")
+
+import argparse
+
+parser = argparse.ArgumentParser(description="Read a file.")
+parser.add_argument('filename',help='The name of file to read.')
+
+
+
