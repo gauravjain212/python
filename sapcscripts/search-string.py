@@ -8,6 +8,7 @@ ER_Data = ["ER"]
 
 with open(inline) as f:
     f = f.readlines()
+#    print(f)
 
 for line in f:
     for ER in ER_Data:
